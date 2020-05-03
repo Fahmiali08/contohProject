@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+     <class name="Travel.Umroh.Mihrab.Qolbi.Model.DataJadwalModel" table="jadwal_tbl">
+        <id name="id_jadwal" column="id_jadwal" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property name="nama_jadwal" column="nama_jadwal"/>
+        <property name="id_paket" column="id_paket"/>
+        <property name="tanggal_berangkat" column="tanggal_berangkat"/>
+        <property name="tanggal_kembali" column="tanggal_kembali"/>
+     </class>
+  
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Travel.Umroh.Mihrab.Qolbi.Model.DataPembayaranModel" table="pembayaran_tbl">
+        <id name="id_pembayaran" column="id_pembayaran" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property name="id_jamaah" column="id_jamaah"/>
+        <property name="id_paket" column="id_paket"/>
+        <property name="tgl_pembayaran" column="tgl_pembayaran"/>
+        <property name="jenis_pembayaran" column="jenis_pembayaran"/>
+     </class>
+  
+  
+
+</hibernate-mapping>
